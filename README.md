@@ -15,13 +15,19 @@ o directo, sin tap explícito:
 brew install sistematlan/tools/mistah
 ```
 
-## Fórmulas
+> **Nota:** este tap solo funciona en macOS. Homebrew Casks (el
+> mecanismo que usamos para distribuir binarios precompilados) no
+> existe en Linuxbrew — usuarios de Linux deben instalar `mistah` vía
+> `curl | sh` o `go install`, ver
+> [README de mistah](https://github.com/sistematlan/mistah#instalación).
 
-| Fórmula | Descripción |
+## Casks
+
+| Cask | Descripción |
 |---|---|
-| [`mistah`](Formula/mistah.rb) | CLI open-source multiplataforma que recupera espacio en disco: cachés, papelera, backups viejos y más. Sin telemetría, código auditable. |
+| [`mistah`](Casks/mistah.rb) | CLI open-source multiplataforma que recupera espacio en disco: cachés, papelera, backups viejos y más. Sin telemetría, código auditable. |
 
-Las fórmulas en este tap se actualizan automáticamente vía
+Los casks en este tap se actualizan automáticamente vía
 [GoReleaser](https://goreleaser.com) en cada release de sus respectivos
 proyectos — no se editan a mano. Ver `.goreleaser.yaml` en
 [sistematlan/mistah](https://github.com/sistematlan/mistah) para el
@@ -29,5 +35,5 @@ mecanismo exacto.
 
 ## Licencia
 
-Cada fórmula respeta la licencia del proyecto que empaqueta. Este tap
+Cada cask respeta la licencia del proyecto que empaqueta. Este tap
 en sí (metadata, no el software empaquetado) es MIT.
